@@ -58,3 +58,27 @@ def plot_samples(X, Y):
             n += 1
 
     plt.show()
+
+import random
+
+def split_set(X, y, valid=0.2):
+    # Xt, yt, Xv, yv = [], [], [], []
+    #
+    len = X.shape[0]
+    train_len = int(len * (1-valid))
+    #
+    # for idx in range(len):
+    #     # user_id = filename[-21:-13]
+    #     # random.seed(user_id)
+    #     if idx > train_len:
+    #         Xv.append(X[idx])
+    #         yv.append(y[idx])
+    #     else:
+    #         Xt.append(X[idx])
+    #         yt.append(y[idx])
+
+    # assert len(X) == len(Xt) + len(Xv)
+    Xt, Xv = np.split(X, [train_len])
+    yt, yv = np.split(y, [train_len])
+
+    return Xt, yt, Xv, yv

@@ -11,6 +11,8 @@ print('img = {}'.format(img))
 
 img.show()
 
+
+
 # image = np.asarray(img)
 #
 # print('image = {}'.format(image))
