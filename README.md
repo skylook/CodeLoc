@@ -1,2 +1,2 @@
-# LandmarkLoc
-A Simple framework for landmark detect &amp; locate in Tensorflow
+# Code Loc
+A Simple example for landmark detect &amp; locate in Tensorflow
